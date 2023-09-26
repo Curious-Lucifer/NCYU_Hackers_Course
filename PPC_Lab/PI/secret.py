@@ -1,0 +1,1 @@
+flag = 'NCYU_HACKERS{Le7_m3_PI_P1_mY_h@nd5_f0R_y0u_^^}'

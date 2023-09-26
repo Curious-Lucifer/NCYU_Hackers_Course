@@ -1,0 +1,26 @@
+#!/bin/bash
+
+LABNAME="PPC LAB"
+DOCKERNAME="ppc_lab"
+
+if [[ $# == 0 ]]; then
+    echo "========= $LABNAME ========="
+    echo "Usage:";
+    echo "Build challenge:     ./snippet build";
+    echo "Rebuild challenge:   ./snippet rebuild";
+    echo "Start challenge:     ./snippet start";
+    echo "Stop challenge:      ./snippet stop";
+    exit 0
+fi
+
+if [[ $1 == "build" ]]; then
+    docker build -t $DOCKERNAME .;
+elif [[ $1 == "rebuild" ]]; then
+    docker rmi $DOCKERNAME;
+    docker build -t $DOCKERNAME .;
+elif [[ $1 == "start" ]]; then
+    docker run -p 10000-10008:10000-10008 --name $DOCKERNAME -d $DOCKERNAME;
+elif [[ $1 == "stop" ]]; then
+    docker stop $DOCKERNAME;
+    docker rm $DOCKERNAME;
+fi
