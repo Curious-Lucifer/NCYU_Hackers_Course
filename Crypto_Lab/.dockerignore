@@ -1,0 +1,8 @@
+.dockerignore
+Dockerfile
+snippet
+Affine_Cipher
+Affine_Cipher_Double_Strength
+Caesar_Cipher
+Straddle_Checkerboard
+Substitution_Cipher
