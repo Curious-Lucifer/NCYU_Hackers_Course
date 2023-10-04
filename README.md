@@ -41,3 +41,8 @@ cd Crypto_Lab
 ---
 ## 設定 CTFd
 在 Challenge 裡有 `PPC_Lab.md` 和 `Crypto_Lab.md`，按照這兩個檔案的資料設定 CTFd 就可以了
+
+---
+## 解答
+在 Solve 裡有 PPC Lab 和 Crypto Lab 所有題目的 solve script
+
